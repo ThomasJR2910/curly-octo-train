@@ -51,7 +51,52 @@ namespace ConsoleApp1
             // Lab 2 //
 
             // Lab 3 //
+            int roll, count1 = 0, count2 = 0, count3 = 0, count4 = 0, count5 = 0, count6 = 0;
 
+            Random rand = new Random();
+
+            //Roll dice 6000 times
+            for (int i = 0; i <= 6000; i++)
+            {
+                //generate roll
+                roll = rand.Next(1, 7);
+
+                //check roll and keep total
+                switch (roll)
+                {
+                    case 1:
+                        count1++;
+                        break;
+
+                    case 2:
+                        count2++;
+                        break;
+
+                    case 3:
+                        count3++;
+                        break;
+
+                    case 4:
+                        count4++;
+                        break;
+
+                    case 5:
+                        count5++;
+                        break;
+
+                    case 6:
+                        count6++;
+                        break;
+                }
+            }
+            //Output results
+            Console.WriteLine($"1: {count1} times");
+            Console.WriteLine($"2: {count2} times");
+            Console.WriteLine($"3: {count3} times");
+            Console.WriteLine($"4: {count4} times");
+            Console.WriteLine($"5: {count5} times");
+            Console.WriteLine($"6: {count6} times");
+            Console.ReadLine();
         }
     }
 }
