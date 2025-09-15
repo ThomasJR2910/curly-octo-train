@@ -47,7 +47,31 @@ namespace ConsoleApp1
             Console.ReadLine();
             Console.Clear();
             // Lab 1 //
+            string input;
+            int uppercase = 0, lowercase = 0, other = 0;
+            Console.WriteLine("Please Enter Text");
+            input = Console.ReadLine();
 
+            foreach (char i in input)
+            {
+                if (char.IsLower(i))
+                {
+                    //Console.WriteLine("lowercase detected");
+                    lowercase += 1;
+                }
+                else if (char.IsUpper(i))
+                {
+                    //Console.WriteLine("Uppercase detected");
+                    uppercase += 1;
+                }
+                else
+                {
+                    //Console.WriteLine("Other Char");
+                    other += 1;
+                }
+            }
+            Console.WriteLine($"\nThere are {uppercase} uppercase letters\nThere are {lowercase} lowercase letters\nThere are {other} other characters");
+            Console.ReadLine();
             // Lab 2 //
             int totalSeconds, hours, minutes, seconds;
             string temp;
