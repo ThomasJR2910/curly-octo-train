@@ -4,7 +4,42 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            // Top //
+
+
+
+
+
+
+
+
+
+
+
+
+            // Middle //
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // Bottom //
+
+
+
+
+
+
+
+            
         }
     }
 }
