@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using System;
+
+namespace ConsoleApp1
 {
     internal class Program
     {
@@ -32,14 +34,18 @@
 
 
             // Bottom //
-
-
-
-
-
-
-
+            Console.ReadLine();
+            Console.WriteLine("The bear (not from the TV show 'The bear') sold me a new guitar.");
+            Console.WriteLine("It was a baritone electric guitar. The bear's son's name was Jimmy I think.");
+            Console.ReadLine();
             
+
+
+
+
+
+
+
         }
     }
 }
