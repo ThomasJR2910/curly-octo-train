@@ -49,7 +49,19 @@ namespace ConsoleApp1
             // Lab 1 //
 
             // Lab 2 //
+            int totalSeconds, hours, minutes, seconds;
+            string temp;
 
+            Console.Write("How many seconds do you want converted into Hours, Minutes and Seconds? ");
+            temp = Console.ReadLine();
+            totalSeconds = Convert.ToInt32(temp);
+
+            hours = totalSeconds / 3600;
+            minutes = (totalSeconds % 3600) / 60;
+            seconds = totalSeconds % 60;
+
+            Console.Write($"{totalSeconds} seconds is {hours} hours, {minutes} minutes and {seconds} seconds!");
+            Console.ReadLine();
             // Lab 3 //
 
         }
